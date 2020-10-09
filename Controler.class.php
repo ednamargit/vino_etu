@@ -331,7 +331,7 @@ class Controler
 						$this->accueil($id);
 						exit;
 					} elseif (empty($celliers)) {
-						$this->ajouterNouvelleBouteilleCellier($id);
+						$this->getListeCelliers($id);
 						exit;
 					} elseif ($type == 2 && !empty($celliers)) {
 						$this->accueil($id);
